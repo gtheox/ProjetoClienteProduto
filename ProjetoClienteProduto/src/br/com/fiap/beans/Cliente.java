@@ -7,8 +7,15 @@ public class Cliente {
 	private String nome;
 	private int idade;
 	private double altura;
+	private Endereco endereco;
 	
-	// setter (entrada) e getters (exibe/retorna)
+	
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
 	public String getNome() {
 		return nome;
 	}
