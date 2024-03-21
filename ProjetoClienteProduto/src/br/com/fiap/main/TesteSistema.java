@@ -1,5 +1,7 @@
 package br.com.fiap.main;
 
+import javax.swing.JOptionPane;
+
 import br.com.fiap.beans.Cliente;
 import br.com.fiap.beans.Endereco;
 import br.com.fiap.beans.Produto;
@@ -11,9 +13,9 @@ public class TesteSistema {
 		Produto objProduto = new Produto();
 		Endereco objEndereco = new Endereco();
 		
-		objCliente.setNome("Gabriel");
-		objCliente.setIdade(18);
-		objCliente.setAltura(1.87);
+		objCliente.setNome(JOptionPane.showInputDialog("Digite o nome do cliente: "));
+		objCliente.setIdade(Integer.parseInt(JOptionPane.showInputDialog("Digite a idade do cliente:")));
+		objCliente.setAltura(Double.parseDouble(JOptionPane.showInputDialog("Digite a altura do cliente")));
 		
 		objProduto.setCodigo(3123213);
 		objProduto.setTipo("celular");
