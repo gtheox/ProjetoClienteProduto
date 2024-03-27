@@ -17,33 +17,35 @@ public class TesteSistema {
 		objCliente.setIdade(Integer.parseInt(JOptionPane.showInputDialog("Digite a idade do cliente:")));
 		objCliente.setAltura(Double.parseDouble(JOptionPane.showInputDialog("Digite a altura do cliente")));
 		
-		objProduto.setCodigo(3123213);
-		objProduto.setTipo("celular");
-		objProduto.setMarca("apple");
-		objProduto.setValor(7999.99);
-		
-		objEndereco.setLougradouro("Rua Apito do Vapor");
-		objEndereco.setNumero(350);
-		objEndereco.setCep("90826-162");
-		objEndereco.setBairro("Cidade Tiradentes");
-		
 		objCliente.setEndereco(objEndereco);
 		
-		System.out.println("Nome do cliente: " + objCliente.getNome() +
-							"\nIdade do cliente: " + objCliente.getIdade() +
-							"\nAltura do cliente: " + objCliente.getAltura());
+		objProduto.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Digite o código do produto:")));
+		objProduto.setTipo(JOptionPane.showInputDialog("Digite o tipo do produto:"));
+		objProduto.setMarca(JOptionPane.showInputDialog("Digite a marca do produto:"));
+		objProduto.setValor(Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do produto:")));
 		
-		System.out.println("\n\nCódigo do produto: " + objProduto.getCodigo() +
+		objEndereco.setLougradouro(JOptionPane.showInputDialog("Digite o endereço:"));
+		objEndereco.setNumero(Integer.parseInt(JOptionPane.showInputDialog("Digite o número:")));
+		objEndereco.setCep(JOptionPane.showInputDialog("Digite o CEP:"));
+		objEndereco.setComplemento(JOptionPane.showInputDialog("Digite o complemento"));
+		objEndereco.setBairro(JOptionPane.showInputDialog("Digiite o bairro:"));1
+ 
+		System.out.println("INFORMAÇÕES DO CLIENTE" +
+							"\nNome do cliente: " + objCliente.getNome() + 
+							"\nIdade do cliente: " + objCliente.getIdade() + 
+							"\nAltura do cliente: " + objCliente.getAltura() + 
+							"\n\nENDEREÇO DO CLIENTE " + 
+							"\nLogradouro: " + objCliente.getEndereco().getLougradouro()+ 
+							"\nNumero: " + objCliente.getEndereco().getNumero() + 
+							"\nCep: " + objCliente.getEndereco().getCep() + 
+							"\nComplemento: " + objCliente.getEndereco().getComplemento() + 
+							"\nBairro: " + objCliente.getEndereco().getBairro() + 
+							"\n\nINFORMAÇÕES DO PRODUTO" + 
+							"\nCódigo do produto: " + objProduto.getCodigo() + 
 							"\nTipo do produto: " + objProduto.getTipo() + 
 							"\nMarca: " + objProduto.getMarca() + 
 							"\nValor: " + objProduto.getValor());
 		
-		System.out.println("\n\nLogradouro: " + objCliente.getEndereco().getLougradouro() +
-							"\nNumero: " + objCliente.getEndereco().getNumero() +
-							"\nCep: " + objCliente.getEndereco().getCep() + 
-							"\nBairro: " + objCliente.getEndereco().getBairro());
-		
-							
 
 	}
 
