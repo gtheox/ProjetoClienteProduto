@@ -28,7 +28,7 @@ public class TesteSistema {
 		objEndereco.setNumero(Integer.parseInt(JOptionPane.showInputDialog("Digite o número:")));
 		objEndereco.setCep(JOptionPane.showInputDialog("Digite o CEP:"));
 		objEndereco.setComplemento(JOptionPane.showInputDialog("Digite o complemento"));
-		objEndereco.setBairro(JOptionPane.showInputDialog("Digiite o bairro:"));1
+		objEndereco.setBairro(JOptionPane.showInputDialog("Digiite o bairro:"));
  
 		System.out.println("INFORMAÇÕES DO CLIENTE" +
 							"\nNome do cliente: " + objCliente.getNome() + 
